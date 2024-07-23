@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: hsl(275, 100%, 97%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 15px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;   
+}
+
+#main-container{
+    background-color: white;
+    width: 42%;
+    padding: 1.8em;
+    border-radius: 10px;
+}
+
+h1, .text-title{
+    color: hsl(292, 42%, 14%);
+}
+
+.text-title{
+    font-size: 18px;
+    padding: 1.2em;
+    font-weight: 600;
+}
+
+.text-title:hover{
+    color: hsl(293, 68%, 50%);
+    cursor: pointer;
+}
+
+.title{
+    display: flex;
+    justify-content: left;
+    gap: 18px;
+    font-size: 1.5em;
+}
+.title img{
+    width: 28px;
+    height: 28px;
+    align-self: center;
+}
+
+.questions{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hide-text{
+    display: none; 
+}
+
+.paragraph{
+    text-align: left;
+    padding: 0.2em 0.2em 0.8em 1.5em; 
+    width: 80%;
+    font-weight: 400;
+    color: hsl(292, 16%, 49%);
+}
+hr{
+    border-color: hsl(275, 100%, 97%);
+}
+
+button{
+    border: none;
+    background-color: white;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 445px){
+    body{
+        font-size: 16px;
+        width: 100%;
+    }
+    #main-container{
+        width: 93%;
+        padding: 0.8em 0.3em;
+    }
+
+    .text-title{
+        padding: 1em;
+        width: 75%;
+    }
+
+    .title{
+        padding: 0.8em;
+        font-size: 1em;
+    }
+    .paragraph{
+        width: 90%;
+        padding: 1em 0.2em 0.8em 0.6em; 
+    }
+}
